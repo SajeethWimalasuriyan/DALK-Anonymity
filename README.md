@@ -2,27 +2,27 @@
 This is a toolbox for determining how secure a masked GPS dataset is in other words determining DAL K-Anonymity. A more detailed set of instructions and more information about the tool in general can be found here -> https://sajeethwimalasuriyan.github.io/DALKWebsite/
 
 
-Description:
+## Description:
 
   The current version of ArcGIS Pro Toolbox offers a Python script/tool that detecting Daily Activity Locations K-anonymity from Raw GPS data and calculate its disclosure rate. Activity Location are defined as a place that the user has spent enough time (greater than 6 hours for the home location and 30 minutes for activity location) on an area of accumulating a certain number of GPS points by calculating a kernel density of the GPS points and detecting the local maxima of the density surface. This tool contains 2 inputs (Raw GPS dataset, home time), 1 output (DALK), and 7 optional inputs.
   The tool utilizes the Gaussian Displacement algorithm for geomasking as default, this tool may be edited and replaced by your own algorithm after implementing the script.
 
-Contents:
+## Contents:
   1) The DALK.tbx file (Arctoolbox)
 
   2) ActivityLocations.py tool script file
 
   3) A sample subfolder, containing a sample File Geodatabase with one raw GPS track for testing.
 
-Installation:
+## Installation:
 
   This tool require ArcGIS Pro 12.x to run. Copy the DALK folder to a folder on your drive, without changing the directory structure. Then add the toolbox DALK.tbx to ArcToolbox in ArcGIS Pro.
 
-Limitations:
+## Limitations:
 
   This tool has not been extensively tested with shapefiles. Recommended format is ArcGIS FGDB.
 
-Instructions:
+## Instructions:
 
   1) After downloaded and upzip the DALK.zip to your local folder directory, Open ArcGIS Pro in your computer. The new page shows:
 
